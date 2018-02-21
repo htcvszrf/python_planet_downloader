@@ -253,6 +253,7 @@ while (query):
       json=stats_endpoint_request)
 
   # This is what is needed to execute the search.
+  print(saved_search.json())
   saved_search_id = saved_search.json()["id"]
 
   index = 0
